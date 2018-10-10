@@ -24,6 +24,8 @@ Simple Javascript cheat sheet.
         - [By value / by reference](#by-value--by-reference)
         - [Objects and 'this' keyword](#objects-and-this-keyword)
         - [Immedediately invoked function expression](#immedediately-invoked-function-expression)
+        - [Closure !!!](#closure)
+        - [call(), apply(), bind()](#call-apply-bind)
 
 
 # Types and operators
@@ -349,3 +351,67 @@ var test = 'Ooops 2 xD !';
 
 console.log(window.test) // "Ooops 2 xD !"
 ```
+
+### Closure !!!
+
+```javascript
+function greet(whattosay) {
+
+   return function(name) {
+       console.log(whattosay + ' ' + name);
+   }
+
+}
+
+var sayHi = greet('Hi');
+sayHi('Tony'); // "Hi Tony"
+
+```
+
+```javascript
+function buildFunctions() {
+ 
+    var arr = [];
+    
+    for (var i = 0; i < 3; i++) {
+        
+        arr.push(
+            function() {
+                console.log(i);   
+            }
+        )    
+    }
+    return arr;
+}
+
+var fs = buildFunctions();
+
+fs[0]();  // "1"
+fs[1]();  // "1"
+fs[2]();  // "1"
+
+function buildFunctions2() {
+ 
+    var arr = [];
+    
+    for (var i = 0; i < 3; i++) {
+        arr.push(
+            (function(j) {
+                return function() {
+                    console.log(j);   
+                }
+            }(i))
+        )
+    }
+    return arr;
+}
+
+var fs2 = buildFunctions2();
+
+fs2[0]();  // "0"
+fs2[1]();  // "1"
+fs2[2]();  // "2"
+```
+
+### call(), apply(), bind()
+What 'this' keyword point :)
