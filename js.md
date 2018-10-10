@@ -26,6 +26,9 @@ Simple Javascript cheat sheet.
         - [Immedediately invoked function expression](#immedediately-invoked-function-expression)
         - [Closure !!!](#closure)
         - [call(), apply(), bind()](#call-apply-bind)
+- [Building objects](#building-objects)
+        - [Functions constructor](#functions-constructor)
+        - [Prototype](#prototype)
 
 
 # Types and operators
@@ -416,3 +419,42 @@ fs2[2]();  // "2"
 
 ### call(), apply(), bind()
 What 'this' keyword point :)
+
+# Building objects
+
+### Functions constructor
+
+Function constructor: function uset to create new object with using new opertor to make it.
+
+```javascript
+function Test() {
+  console.log(this)  
+  this.Test = 'a'
+  console.log('invoked')  
+}
+
+var a = new Test()
+console.log(a)
+
+// [object Object] { ... }
+// "invoked"
+// [object Object] {Test: "a"}
+```
+
+### Prototype 
+
+```javascript
+function Test() {
+  console.log(this);
+  this.test = 'a';
+  console.log('invoked');
+}
+
+test.prototype.getHi = function(){
+  return 'Hi'
+}
+
+var a_test = new Test();
+console.log(a_test.getHi());
+
+```
