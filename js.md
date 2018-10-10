@@ -236,16 +236,17 @@ function sayHi() {
 }
 
 sayHi.language = 'english'
-console.log(sayHi)
-console.log(sayHi.language)
+console.log(sayHi)  // function sayHi() { ... }
+console.log(sayHi.language) // "english"
 ```
 
+```javascript
+var a = function(){}
+console.log(a.__proto__)  //function () {}
+console.log(a.__proto__.__proto__)  // [object Object] { ... }
+console.log([].__proto__.__proto__)  // [object Object] { ... }
 ```
-function sayHi() {
-  window.runnerWindow.proxyConsole.log('Hi !')
-}
-"english"
-```
+Everything is objects or primitive
 
 ### Functions statements / expressions
 Function statements don't value.
@@ -349,7 +350,7 @@ var test = 'Ooops 2 xD !';
     console.log('Hi !')  // "Hi !"
 }()); // IIFE
 
-console.log(window.test) // "Ooops 2 xD !"
+console.log(test) // "Ooops 2 xD !"
 ```
 
 ### Closure !!!
