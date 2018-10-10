@@ -6,19 +6,20 @@ Simple Javascript cheat sheet.
 
 - [JS cheat sheet](#js-cheat-sheet)
 - [Table of content](#table-of-content)
-- [Types and operators](#types-and-operators)
+- [JS basic](#js-basic)
+    - [Types and operators](#types-and-operators)
         - [Objects type](#objects-type)
         - [Primitive types](#primitive-types)
         - [Operator precedence and associativity](#operator-precedence-and-associativity)
         - [JS coercion](#js-coercion)
-- [JS execution context](#js-execution-context)
+    - [JS execution context](#js-execution-context)
         - [Global objects](#global-objects)
         - [Creation and hoisting](#creation-and-hoisting)
         - [Execution stack](#execution-stack)
         - [The scope chain](#the-scope-chain)
         - [let, var scope](#let-var-scope)
         - [Events queue](#events-queue)
-- [Objects and functions](#objects-and-functions)
+    - [Objects and functions](#objects-and-functions)
         - [Functions are objects](#functions-are-objects)
         - [Functions statements / expressions](#functions-statements--expressions)
         - [By value / by reference](#by-value--by-reference)
@@ -26,12 +27,14 @@ Simple Javascript cheat sheet.
         - [Immedediately invoked function expression](#immedediately-invoked-function-expression)
         - [Closure !!!](#closure)
         - [call(), apply(), bind()](#call-apply-bind)
-- [Building objects](#building-objects)
+    - [Building objects](#building-objects)
         - [Functions constructor](#functions-constructor)
         - [Prototype](#prototype)
+- [Node JS](#node-js)
 
+# JS basic
 
-# Types and operators
+## Types and operators
 [JavaScript data types and data structures | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
 
 ### Objects type
@@ -56,7 +59,7 @@ var a = 3 + '4'
 console.log(a) // 34
 ```
 
-# JS execution context
+## JS execution context
 
 ### Global objects
 
@@ -228,7 +231,7 @@ waitFourSeconds();
 console.log('finished execution');
 ```
 
-# Objects and functions
+## Objects and functions
 
 ### Functions are objects
 First class function, function can be anonymous. Function have two base property name and code which is invocable ().
@@ -420,7 +423,7 @@ fs2[2]();  // "2"
 ### call(), apply(), bind()
 What 'this' keyword point :)
 
-# Building objects
+## Building objects
 
 ### Functions constructor
 
@@ -458,3 +461,5 @@ var a_test = new Test();
 console.log(a_test.getHi());
 
 ```
+
+# Node JS
