@@ -6,10 +6,11 @@
 - [Table of content](#table-of-content)
 - [Man save you!](#man-save-you)
 - [Find file](#find-file)
-        - [Advance search files](#advance-search-files)
+    - [Advance search files](#advance-search-files)
   
 
 # Man save you!
+
 ```bash
 #lets look on manual of man
 man man
@@ -60,7 +61,9 @@ Executing command on files founded by the find command
 ```bash
 find -maxdepth 1 -regex '.*txt' -exec vi {}\;
 ```
-### Advance search files
+
+## Advance search files
+
 Find file older than
 ```bash
 #find file olter than 10 days
