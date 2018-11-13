@@ -1,5 +1,5 @@
 # Git cheat sheet
-Simple git cheat sheet, base on great [udacity git course](https://classroom.udacity.com/courses/ud123) for beginners.
+Simple git cheat sheet, base on great [udacity git course](https://classroom.udacity.com/courses/ud123) for beginners and [Learn Git with Bitbucket Cloud](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud).
 
 # Table of content
 
@@ -12,6 +12,10 @@ Simple git cheat sheet, base on great [udacity git course](https://classroom.uda
 - [Git branching](#git-branching)
 - [Git merge](#git-merge)
 - [Git undoing changes](#git-undoing-changes)
+  - [Changing The Last Commit](#changing-the-last-commit)
+  - [Git revert](#git-revert)
+  - [Git reset](#git-reset)
+- [Git collaborating](#git-collaborating)
   
 
 # Git log, checking history of repo.
@@ -59,3 +63,37 @@ git merge second-branch #merge second-branch
 ```
 
 # Git undoing changes
+
+[Git undoing changes](https://www.atlassian.com/git/tutorials/undoing-changes) another reference.
+
+## Changing The Last Commit
+```bash
+git commit --amend
+
+# Edit hello.py and main.py git add hello.py git commit
+# Realize you forgot to add the changes from main.py git add main.py
+git commit --amend --no-edit
+```
+
+## Git revert 
+```bash
+git revert <SHA-of-commit-to-revert>
+```
+
+## Git reset
+Reverting creates a new commit that reverts or undos a previous commit. Resetting, on the other hand, erases commits!
+
+```bash
+
+```
+
+You've got to be careful with Git's resetting capabilities. This is one of the few commands that lets you erase commits from the repository. If a commit is no longer in the repository, then its content is gone.
+
+To alleviate the stress a bit, Git does keep track of everything for about 30 days before it completely erases anything. To access this content, you'll need to use the [```git reflog```](https://www.atlassian.com/git/tutorials/rewriting-history) command.
+
+# Git collaborating
+
+- [```git remote```](https://www.atlassian.com/git/tutorials/syncing)
+- [```git fetch```](https://www.atlassian.com/git/tutorials/syncing/git-fetch)
+- [```git push```](https://www.atlassian.com/git/tutorials/syncing/git-push)
+- [```git pull```](https://www.atlassian.com/git/tutorials/syncing/git-pull)
