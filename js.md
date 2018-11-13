@@ -24,7 +24,7 @@ Simple Javascript cheat sheet.
         - [Functions statements / expressions](#functions-statements--expressions)
         - [By value / by reference](#by-value--by-reference)
         - [Objects and 'this' keyword](#objects-and-this-keyword)
-        - [Immedediately invoked function expression](#immedediately-invoked-function-expression)
+        - [Immediately invoked function expression](#immediately-invoked-function-expression)
         - [Closure !!!](#closure)
         - [call(), apply(), bind()](#call-apply-bind)
     - [Building objects](#building-objects)
@@ -41,7 +41,7 @@ Simple Javascript cheat sheet.
 - Object
 
 ### Primitive types
-There are six prymitive type in JavaScript
+There are six primitive type in JavaScript
 - Undefined
 - Null
 - Boolean (true/false)
@@ -75,7 +75,7 @@ window === this
 ### Creation and hoisting
 
 - Creation phase sets up memory space for variables and functions (hoisting).
-- All variable are set to undefine in creation phase.
+- All variable are set to undefined in creation phase.
 
 ```javascript
 b();
@@ -123,7 +123,7 @@ undefined
 
 ### The scope chain
 
-Reference to lexical enviroments.
+Reference to lexical environments.
 
 - reference to **global** execution context
 ```javascript
@@ -163,7 +163,7 @@ a();
 ```
 2
 ```
-- reference to **global** (can't faind myVar in **a function** execution context and look for it in **global** execution context)
+- reference to **global** (can't find myVar in **a function** execution context and look for it in **global** execution context)
 
 ```javascript
 function a() {
@@ -258,7 +258,7 @@ Everything is objects or primitive
 Function statements don't value.
 Function expression ends up creating value.
 
-**Function expresion isn't hoisting!**
+**Function expression isn't hoisting!**
 
 
 ```javascript
@@ -346,7 +346,7 @@ var c = {
 c.log();
 ```
 
-### Immedediately invoked function expression
+### Immediately invoked function expression
 Execution code in the fly
 ```javascript
 var test = 'Ooops 2 xD !';
@@ -427,7 +427,7 @@ What 'this' keyword point :)
 
 ### Functions constructor
 
-Function constructor: function uset to create new object with using new opertor to make it.
+Function constructor: function unset to create new object with using new operator to make it.
 
 ```javascript
 function Test() {

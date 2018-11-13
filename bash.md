@@ -51,7 +51,7 @@ find . -perm 400 -type f
 #find file by size
 #find files that matches exacly given size
 find . -size 100M
-#find files smaler than 100M 
+#find files smaller than 100M 
 find . -size -100M
 #find files bigger than 100M 
 find . -size +100M
@@ -66,7 +66,7 @@ find -maxdepth 1 -regex '.*txt' -exec vi {}\;
 
 Find file older than
 ```bash
-#find file olter than 10 days
+#find file older than 10 days
 find ./some-path/* -mtime +10
 #count files older than 10 days
 find ./some-path/* -mtime +10 | wc -l
