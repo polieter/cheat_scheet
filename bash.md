@@ -2,12 +2,12 @@
 
 # Table of content
 
-- [Bash cheat sheet](#bsah-cheat-sheet)
+- [Bash cheat sheet](#bash-cheat-sheet)
 - [Table of content](#table-of-content)
 - [Man save you!](#man-save-you)
 - [Find file](#find-file)
-    - [Advance search files](#advance-search-files)
-  
+  - [Advance search files](#advance-search-files)
+  - [List ten biggest files/folder](#list-ten-biggest-filesfolder)
 
 # Man save you!
 
