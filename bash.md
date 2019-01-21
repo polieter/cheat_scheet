@@ -74,4 +74,7 @@ find ./some-path/* -mtime +10 | wc -l
 find ./some-path/* -mtime +10 | xargs rm -rf
 ```
 
-
+## List ten biggest files/folder
+```
+du -ah ./some-path/ | sort -rh | head -n 10
+```
