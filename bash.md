@@ -1,8 +1,8 @@
-# Bsah cheat sheet
+# Bash cheat sheet
 
 # Table of content
 
-- [Bsah cheat sheet](#bsah-cheat-sheet)
+- [Bash cheat sheet](#bsah-cheat-sheet)
 - [Table of content](#table-of-content)
 - [Man save you!](#man-save-you)
 - [Find file](#find-file)
