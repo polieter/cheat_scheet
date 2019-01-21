@@ -1,6 +1,6 @@
 # Simple cheat sheet
 
-Simple cheat sheets to make live esy :)
+Simple cheat sheets to make life easy :)
 
 * JavaScript - js.md
 * debian / linux bash cheat sheet - bash.md
