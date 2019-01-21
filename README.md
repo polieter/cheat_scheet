@@ -1,4 +1,7 @@
 # Simple cheat sheet
 
-* python
-* debian / linux
+Simple cheat sheets to make live esy :)
+
+* JavaScript - js.md
+* debian / linux bash cheat sheet - bash.md
+* git - git.md
