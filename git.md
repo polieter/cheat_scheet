@@ -81,11 +81,16 @@ git revert <SHA-of-commit-to-revert>
 ```
 
 ## Git reset
-Reverting creates a new commit that reverts or undos a previous commit. Resetting, on the other hand, erases commits!
+Reverting creates a new commit that reverts or undo a previous commit. Resetting, on the other hand, erases commits!
 
 ```bash
-
+git reset <reference-to-commit>
 ```
+three flags:
+- --mixed default (unstages committed changes)
+- --soft (moves committed changes to the staging index)
+- --hard (erase commits)
+
 
 You've got to be careful with Git's resetting capabilities. This is one of the few commands that lets you erase commits from the repository. If a commit is no longer in the repository, then its content is gone.
 
