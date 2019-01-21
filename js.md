@@ -6,6 +6,7 @@ Simple Javascript cheat sheet.
 
 - [JS cheat sheet](#js-cheat-sheet)
 - [Table of content](#table-of-content)
+- [References](#references)
 - [JS basic](#js-basic)
     - [Types and operators](#types-and-operators)
         - [Objects type](#objects-type)
@@ -31,6 +32,9 @@ Simple Javascript cheat sheet.
         - [Functions constructor](#functions-constructor)
         - [Prototype](#prototype)
 - [Node JS](#node-js)
+
+# References
+[JavaScript - The Right Way](http://jstherightway.org/)
 
 # JS basic
 
