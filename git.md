@@ -5,6 +5,7 @@ Simple git cheat sheet, base on great [udacity git course](https://classroom.uda
 
 - [Git cheat sheet](#git-cheat-sheet)
 - [Table of content](#table-of-content)
+- [Git config](#Git-config)
 - [Git log, checking history of repo.](#git-log-checking-history-of-repo)
   - [git log](#git-log)
 - [Git commit](#git-commit)
@@ -17,6 +18,15 @@ Simple git cheat sheet, base on great [udacity git course](https://classroom.uda
   - [Git reset](#git-reset)
 - [Git collaborating](#git-collaborating)
   
+# Git config 
+
+```bash
+git config user.name "user_name"
+git config user.email "user@email.com"
+---
+git config --global user.name "user_name"
+git config --global user.email "user@email.com"
+```
 
 # Git log, checking history of repo.
 
