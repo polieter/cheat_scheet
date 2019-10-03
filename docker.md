@@ -29,7 +29,7 @@ sudo chmod 666 /var/run/docker.sock
 
 - sources:
   - [stackoverflow](https://stackoverflow.com/questions/48957195/how-to-fix-docker-got-permission-denied-issue)
-  - [githyb](#https://github.com/jgsqware/clairctl/issues/60)
+  - [github](https://github.com/jgsqware/clairctl/issues/60)
 
 # Image
 
