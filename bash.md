@@ -78,3 +78,8 @@ find ./some-path/* -mtime +10 | xargs rm -rf
 ```
 du -ah ./some-path/ | sort -rh | head -n 10
 ```
+
+# Kill all
+```
+ps | grep meld | awk '{print $1}' | xargs kill -9
+```
